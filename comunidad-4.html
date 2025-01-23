@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>10 Comunidad | Intro RNA-seq LCG-UNAM 2025</title>
+  <meta name="description" content="10 Comunidad | Intro RNA-seq LCG-UNAM 2025" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="10 Comunidad | Intro RNA-seq LCG-UNAM 2025" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="lcolladotor/rnaseq_LCG-UNAM_2025" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="10 Comunidad | Intro RNA-seq LCG-UNAM 2025" />
+  
+  
+  
+
+<meta name="author" content="Leonardo Collado-Torres" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="icon_32.png" type="image/x-icon" />
+<link rel="prev" href="spatiallibd.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#code-of-conduct"><i class="fa fa-check"></i>Code of Conduct</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-schedule"><i class="fa fa-check"></i>Course Schedule</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#external-links"><i class="fa fa-check"></i>External links</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-prerequisites"><i class="fa fa-check"></i>Course Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-evaluation"><i class="fa fa-check"></i>Course Evaluation</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-session-information"><i class="fa fa-check"></i>R session information</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="06_conclusion.html"><a href="#introducci%C3%B3n-a-r-y-rstudio"><i class="fa fa-check"></i><b>1</b> Introducción a R y RStudio</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html"><i class="fa fa-check"></i><b>1.1</b> R</a></li>
+<li class="chapter" data-level="1.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#github"><i class="fa fa-check"></i><b>1.2</b> GitHub</a></li>
+<li class="chapter" data-level="1.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#rstudio"><i class="fa fa-check"></i><b>1.3</b> RStudio</a></li>
+<li class="chapter" data-level="1.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#material-del-curso"><i class="fa fa-check"></i><b>1.4</b> Material del curso</a></li>
+<li class="chapter" data-level="1.5" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#actividad-postcards"><i class="fa fa-check"></i><b>1.5</b> Actividad postcards</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#create-beautiful-simple-personal-websites"><i class="fa fa-check"></i><b>1.5.1</b> Create Beautiful, Simple Personal Websites</a></li>
+<li class="chapter" data-level="1.5.2" data-path="06_conclusion.html"><a href="#instalaci%C3%B3n"><i class="fa fa-check"></i><b>1.5.2</b> Instalación</a></li>
+<li class="chapter" data-level="1.5.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#plantillas"><i class="fa fa-check"></i><b>1.5.3</b> Plantillas</a></li>
+<li class="chapter" data-level="1.5.4" data-path="06_conclusion.html"><a href="#crear-un-nuevo-proyecto-en-rstudio-selecci%C3%B3n-interactiva"><i class="fa fa-check"></i><b>1.5.4</b> Crear un nuevo proyecto en RStudio (selección interactiva)</a></li>
+<li class="chapter" data-level="1.5.5" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#crear-un-nuevo-proyecto"><i class="fa fa-check"></i><b>1.5.5</b> Crear un nuevo proyecto</a></li>
+<li class="chapter" data-level="1.5.6" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#configurar-git-y-github"><i class="fa fa-check"></i><b>1.5.6</b> Configurar Git y GitHub</a></li>
+<li class="chapter" data-level="1.5.7" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#elegir-una-plantilla"><i class="fa fa-check"></i><b>1.5.7</b> Elegir una plantilla</a></li>
+<li class="chapter" data-level="1.5.8" data-path="06_conclusion.html"><a href="#editar-con-su-informaci%C3%B3n"><i class="fa fa-check"></i><b>1.5.8</b> Editar con su información</a></li>
+<li class="chapter" data-level="1.5.9" data-path="06_conclusion.html"><a href="#desplegar-la-p%C3%A1gina"><i class="fa fa-check"></i><b>1.5.9</b> Desplegar la página</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="06_conclusion.html"><a href="#introducci%C3%B3n-a-bioconductor"><i class="fa fa-check"></i><b>2</b> Introducción a Bioconductor</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introducción-a-bioconductor.html"><a href="introducción-a-bioconductor.html"><i class="fa fa-check"></i><b>2.1</b> Encontrando paquetes de Bioconductor</a></li>
+<li class="chapter" data-level="2.2" data-path="introducción-a-bioconductor.html"><a href="introducción-a-bioconductor.html#estructura-de-un-paquete-de-bioc"><i class="fa fa-check"></i><b>2.2</b> Estructura de un paquete de BioC</a></li>
+<li class="chapter" data-level="2.3" data-path="introducción-a-bioconductor.html"><a href="introducción-a-bioconductor.html#las-dos-ramas-de-bioconductor-release-y-devel"><i class="fa fa-check"></i><b>2.3</b> Las dos ramas de Bioconductor: release y devel</a></li>
+<li class="chapter" data-level="2.4" data-path="introducción-a-bioconductor.html"><a href="introducción-a-bioconductor.html#cursos-y-eventos"><i class="fa fa-check"></i><b>2.4</b> Cursos y eventos</a></li>
+<li class="chapter" data-level="2.5" data-path="introducción-a-bioconductor.html"><a href="introducción-a-bioconductor.html#comunidad"><i class="fa fa-check"></i><b>2.5</b> Comunidad</a></li>
+<li class="chapter" data-level="2.6" data-path="introducción-a-bioconductor.html"><a href="introducción-a-bioconductor.html#ejercicio-grupal"><i class="fa fa-check"></i><b>2.6</b> Ejercicio grupal</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="06_conclusion.html"><a href="#objetos-de-bioconductor-para-datos-de-expresi%C3%B3n"><i class="fa fa-check"></i><b>3</b> Objetos de Bioconductor para datos de expresión</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="objetos-de-bioconductor-para-datos-de-expresión.html"><a href="objetos-de-bioconductor-para-datos-de-expresión.html"><i class="fa fa-check"></i><b>3.1</b> SummarizedExperiment</a></li>
+<li class="chapter" data-level="3.2" data-path="objetos-de-bioconductor-para-datos-de-expresión.html"><a href="objetos-de-bioconductor-para-datos-de-expresión.html#ejercicio"><i class="fa fa-check"></i><b>3.2</b> Ejercicio</a></li>
+<li class="chapter" data-level="3.3" data-path="objetos-de-bioconductor-para-datos-de-expresión.html"><a href="objetos-de-bioconductor-para-datos-de-expresión.html#isee"><i class="fa fa-check"></i><b>3.3</b> iSEE</a></li>
+<li class="chapter" data-level="3.4" data-path="objetos-de-bioconductor-para-datos-de-expresión.html"><a href="objetos-de-bioconductor-para-datos-de-expresión.html#ejercicio-con-spatiallibd"><i class="fa fa-check"></i><b>3.4</b> Ejercicio con spatialLIBD</a></li>
+<li class="chapter" data-level="3.5" data-path="objetos-de-bioconductor-para-datos-de-expresión.html"><a href="objetos-de-bioconductor-para-datos-de-expresión.html#comunidad-1"><i class="fa fa-check"></i><b>3.5</b> Comunidad</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="06_conclusion.html"><a href="#datos-de-rna-seq-a-trav%C3%A9s-de-recount3"><i class="fa fa-check"></i><b>4</b> Datos de RNA-seq a través de recount3</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="datos-de-rna-seq-a-través-de-recount3.html"><a href="datos-de-rna-seq-a-través-de-recount3.html"><i class="fa fa-check"></i><b>4.1</b> Procesar datos crudos (FASTQ) con SPEAQeasy</a></li>
+<li class="chapter" data-level="4.2" data-path="datos-de-rna-seq-a-través-de-recount3.html"><a href="datos-de-rna-seq-a-través-de-recount3.html#proyectos-recount"><i class="fa fa-check"></i><b>4.2</b> Proyectos recount</a></li>
+<li class="chapter" data-level="4.3" data-path="datos-de-rna-seq-a-través-de-recount3.html"><a href="datos-de-rna-seq-a-través-de-recount3.html#usar-recount3"><i class="fa fa-check"></i><b>4.3</b> Usar recount3</a></li>
+<li class="chapter" data-level="4.4" data-path="datos-de-rna-seq-a-través-de-recount3.html"><a href="datos-de-rna-seq-a-través-de-recount3.html#ejercicio-1"><i class="fa fa-check"></i><b>4.4</b> Ejercicio</a></li>
+<li class="chapter" data-level="4.5" data-path="datos-de-rna-seq-a-través-de-recount3.html"><a href="datos-de-rna-seq-a-través-de-recount3.html#comunidad-2"><i class="fa fa-check"></i><b>4.5</b> Comunidad</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="06_conclusion.html"><a href="#modelos-estad%C3%ADsticos"><i class="fa fa-check"></i><b>5</b> Modelos estadísticos</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html"><i class="fa fa-check"></i><b>5.1</b> ExploreModelMatrix</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#ejemplo-1"><i class="fa fa-check"></i><b>5.1.1</b> Ejemplo 1</a></li>
+<li class="chapter" data-level="5.1.2" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#ejemplo-2"><i class="fa fa-check"></i><b>5.1.2</b> Ejemplo 2</a></li>
+<li class="chapter" data-level="5.1.3" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#ejemplo-3"><i class="fa fa-check"></i><b>5.1.3</b> Ejemplo 3</a></li>
+<li class="chapter" data-level="5.1.4" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#ejercicio-2"><i class="fa fa-check"></i><b>5.1.4</b> Ejercicio</a></li>
+<li class="chapter" data-level="5.1.5" data-path="06_conclusion.html"><a href="#para-aprender-m%C3%A1s"><i class="fa fa-check"></i><b>5.1.5</b> Para aprender más</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#datos-de-srp045638"><i class="fa fa-check"></i><b>5.2</b> Datos de SRP045638</a></li>
+<li class="chapter" data-level="5.3" data-path="06_conclusion.html"><a href="#normalizaci%C3%B3n-de-datos"><i class="fa fa-check"></i><b>5.3</b> Normalización de datos</a></li>
+<li class="chapter" data-level="5.4" data-path="06_conclusion.html"><a href="#expresi%C3%B3n-diferencial"><i class="fa fa-check"></i><b>5.4</b> Expresión diferencial</a></li>
+<li class="chapter" data-level="5.5" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#visualizando-genes-de"><i class="fa fa-check"></i><b>5.5</b> Visualizando genes DE</a></li>
+<li class="chapter" data-level="5.6" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#ejercicio-3"><i class="fa fa-check"></i><b>5.6</b> Ejercicio</a></li>
+<li class="chapter" data-level="5.7" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#comunidad-3"><i class="fa fa-check"></i><b>5.7</b> Comunidad</a></li>
+<li class="chapter" data-level="5.8" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#ejercicio-respuesta"><i class="fa fa-check"></i><b>5.8</b> Ejercicio: respuesta</a></li>
+<li class="chapter" data-level="5.9" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#sobre-centering-y-scaling-en-heatmaps"><i class="fa fa-check"></i><b>5.9</b> Sobre <em>centering</em> y <em>scaling</em> en heatmaps</a></li>
+<li class="chapter" data-level="5.10" data-path="06_conclusion.html"><a href="#espec%C3%ADficaciones-del-proyecto"><i class="fa fa-check"></i><b>5.10</b> Específicaciones del proyecto</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="smokingmouse.html"><a href="smokingmouse.html"><i class="fa fa-check"></i><b>6</b> smokingMouse</a></li>
+<li class="chapter" data-level="7" data-path="06_conclusion.html"><a href="#revisi%C3%B3n"><i class="fa fa-check"></i><b>7</b> Revisión</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="revisión.html"><a href="revisión.html"><i class="fa fa-check"></i><b>7.1</b> Ejercicio en equipo</a></li>
+<li class="chapter" data-level="7.2" data-path="revisión.html"><a href="revisión.html#respuestas"><i class="fa fa-check"></i><b>7.2</b> Respuestas</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="rbioconductor-powered-team-data-science.html"><a href="rbioconductor-powered-team-data-science.html"><i class="fa fa-check"></i><b>8</b> R/Bioconductor-powered Team Data Science</a></li>
+<li class="chapter" data-level="9" data-path="spatiallibd.html"><a href="spatiallibd.html"><i class="fa fa-check"></i><b>9</b> spatialLIBD</a></li>
+<li class="chapter" data-level="10" data-path="comunidad-4.html"><a href="comunidad-4.html"><i class="fa fa-check"></i><b>10</b> Comunidad</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="comunidad-4.html"><a href="comunidad-4.html#de-alumnos-lcg-2021"><i class="fa fa-check"></i><b>10.1</b> De alumnos LCG 2021</a></li>
+<li class="chapter" data-level="10.2" data-path="comunidad-4.html"><a href="comunidad-4.html#de-ustedes"><i class="fa fa-check"></i><b>10.2</b> De ustedes</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intro RNA-seq LCG-UNAM 2025</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="comunidad-4" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> Comunidad<a href="comunidad-4.html#comunidad-4" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li><a href="https://twitter.com/miR_community" class="uri">https://twitter.com/miR_community</a></li>
+<li><a href="https://twitter.com/R_LGBTQ" class="uri">https://twitter.com/R_LGBTQ</a></li>
+<li><a href="https://twitter.com/conecta_R" class="uri">https://twitter.com/conecta_R</a></li>
+<li><a href="https://twitter.com/LatinR_Conf" class="uri">https://twitter.com/LatinR_Conf</a></li>
+<li><a href="https://twitter.com/R4DScommunity" class="uri">https://twitter.com/R4DScommunity</a></li>
+<li><a href="https://twitter.com/RConsortium" class="uri">https://twitter.com/RConsortium</a></li>
+<li><a href="https://twitter.com/rweekly_org" class="uri">https://twitter.com/rweekly_org</a></li>
+<li><a href="https://twitter.com/RLadiesGlobal" class="uri">https://twitter.com/RLadiesGlobal</a></li>
+<li><a href="https://twitter.com/RLadiesBmore" class="uri">https://twitter.com/RLadiesBmore</a></li>
+<li><a href="https://twitter.com/search?q=%23RLadiesMX&amp;src=typed_query" class="uri">https://twitter.com/search?q=%23RLadiesMX&amp;src=typed_query</a></li>
+</ul>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+The blog post about the First annual meeting of <a href="https://twitter.com/hashtag/RLadiesMX?src=hash&amp;ref_src=twsrc%5Etfw">#RLadiesMX</a> is ready!! All <a href="https://twitter.com/hashtag/rladies?src=hash&amp;ref_src=twsrc%5Etfw">#rladies</a> chapters in México met for the first time! 🤩 Spread the word and join this amazing community 💜<a href="https://t.co/evY4Tc18rw">https://t.co/evY4Tc18rw</a> Thanks <a href="https://twitter.com/AnaBetty2304?ref_src=twsrc%5Etfw"><span class="citation">@AnaBetty2304</span></a> <a href="https://twitter.com/Averi_GG?ref_src=twsrc%5Etfw"><span class="citation">@Averi_GG</span></a> and <a href="https://twitter.com/josschavezf1?ref_src=twsrc%5Etfw"><span class="citation">@josschavezf1</span></a> for all your work!
+</p>
+— RLadies Cuernavaca (<span class="citation">@RLadiesCuerna</span>) <a href="https://twitter.com/RLadiesCuerna/status/1355655180751151107?ref_src=twsrc%5Etfw">January 30, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li><a href="https://twitter.com/Bioconductor" class="uri">https://twitter.com/Bioconductor</a></li>
+<li><a href="https://twitter.com/rOpenSci" class="uri">https://twitter.com/rOpenSci</a></li>
+<li><a href="https://twitter.com/LIBDrstats" class="uri">https://twitter.com/LIBDrstats</a></li>
+<li><a href="https://twitter.com/CDSBMexico" class="uri">https://twitter.com/CDSBMexico</a></li>
+</ul>
+<blockquote class="twitter-tweet">
+<p lang="es" dir="ltr">
+¡Chequen el nuevo blog post de Erick <a href="https://twitter.com/ErickCuevasF?ref_src=twsrc%5Etfw"><span class="citation">@ErickCuevasF</span></a>! 💯<br><br>Nos describe sus experiencias en <a href="https://twitter.com/hashtag/BioC2020?src=hash&amp;ref_src=twsrc%5Etfw">#BioC2020</a> y <a href="https://twitter.com/hashtag/CDSB2020?src=hash&amp;ref_src=twsrc%5Etfw">#CDSB2020</a><br><br>Además estamos orgullxs de que Erick se unió a la Junta Directiva de la CDSB 🤩🎉<br><br>👀 <a href="https://t.co/uGpgnqXvVM">https://t.co/uGpgnqXvVM</a><a href="https://twitter.com/hashtag/rstatsES?src=hash&amp;ref_src=twsrc%5Etfw">#rstatsES</a> <a href="https://t.co/O2eIbk5YoZ">pic.twitter.com/O2eIbk5YoZ</a>
+</p>
+— ComunidadBioInfo (<span class="citation">@CDSBMexico</span>) <a href="https://twitter.com/CDSBMexico/status/1296920807105540098?ref_src=twsrc%5Etfw">August 21, 2020</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div id="de-alumnos-lcg-2021" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> De alumnos LCG 2021<a href="comunidad-4.html#de-alumnos-lcg-2021" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+<a href="https://twitter.com/fikandata?ref_src=twsrc%5Etfw"><span class="citation">@fikandata</span></a> <a href="https://twitter.com/MqElizabeth?ref_src=twsrc%5Etfw"><span class="citation">@MqElizabeth</span></a> <br><br>Looking for a solid and useful R 📦, we stumbled upon this <br>beauty 🤩 <a href="https://t.co/KR3twAxqRY">https://t.co/KR3twAxqRY</a><br><br>shoutouts to <a href="https://twitter.com/digitalwright?ref_src=twsrc%5Etfw"><span class="citation">@digitalwright</span></a> 👈!!<a href="https://twitter.com/lcolladotor?ref_src=twsrc%5Etfw"><span class="citation">@lcolladotor</span></a> <a href="https://twitter.com/Bioconductor?ref_src=twsrc%5Etfw"><span class="citation">@Bioconductor</span></a>
+</p>
+— Axel Zagal Norman (<span class="citation">@NormanZagal</span>) <a href="https://twitter.com/NormanZagal/status/1364381133878611968?ref_src=twsrc%5Etfw">February 24, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+In today's lesson of bioinformatics course of undergraduate program in genomic sciences <a href="https://twitter.com/lcgunam?ref_src=twsrc%5Etfw"><span class="citation">@lcgunam</span></a> we created our first personal page using <a href="https://twitter.com/seankross?ref_src=twsrc%5Etfw"><span class="citation">@seankross</span></a>' postcards R package with <a href="https://twitter.com/lcolladotor?ref_src=twsrc%5Etfw"><span class="citation">@lcolladotor</span></a> as our instructor. <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/sXUSietCZy">https://t.co/sXUSietCZy</a>
+</p>
+— Angel Castillo (<span class="citation">@angelcaztle13</span>) <a href="https://twitter.com/angelcaztle13/status/1364466027682140162?ref_src=twsrc%5Etfw">February 24, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Wake up <br>Brew some <a href="https://twitter.com/tyulmalcafe?ref_src=twsrc%5Etfw"><span class="citation">@tyulmalcafe</span></a> beans <br>Attend <a href="https://twitter.com/lcolladotor?ref_src=twsrc%5Etfw"><span class="citation">@lcolladotor</span></a> amazing class on visualizing expression data using ISEE <a href="https://twitter.com/FedeBioinfo?ref_src=twsrc%5Etfw"><span class="citation">@FedeBioinfo</span></a> <a href="https://twitter.com/KevinRUE67?ref_src=twsrc%5Etfw"><span class="citation">@KevinRUE67</span></a> <a href="https://twitter.com/CSoneson?ref_src=twsrc%5Etfw"><span class="citation">@CSoneson</span></a> <br>Am I dreaming? <br>Nah! Mug is empty.
+</p>
+— Alfredo Varela (<span class="citation">@fikandata</span>) <a href="https://twitter.com/fikandata/status/1364669473634983941?ref_src=twsrc%5Etfw">February 24, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Today I learned how to visualize data in a cool and easy way in <a href="https://twitter.com/lcolladotor?ref_src=twsrc%5Etfw"><span class="citation">@lcolladotor</span></a> 's class. <br><br>ExploreModelMatrix definitely makes your life easier! <br>Shoutouts to:<a href="https://twitter.com/CSoneson?ref_src=twsrc%5Etfw"><span class="citation">@CSoneson</span></a> <a href="https://twitter.com/FedeBioinfo?ref_src=twsrc%5Etfw"><span class="citation">@FedeBioinfo</span></a> <a href="https://twitter.com/mikelove?ref_src=twsrc%5Etfw"><span class="citation">@mikelove</span></a>
+</p>
+— Axel Zagal Norman (<span class="citation">@NormanZagal</span>) <a href="https://twitter.com/NormanZagal/status/1365034931261349889?ref_src=twsrc%5Etfw">February 25, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="de-ustedes" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> De ustedes<a href="comunidad-4.html#de-ustedes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>??</p>
+
+</div>
+</div>
+<div class="container">
+    <footer class="site-footer">
+
+      <center>
+<p class="powered-by">
+© 2011-2020. All thoughts and opinions here are my own. The icon was designed by <a href="https://www.linkedin.com/in/mauricio-guzman-6529b551/">Mauricio Guzmán</a> and is inspired by <a href="https://en.wikipedia.org/wiki/Huichol">Huichol culture</a>; it represents my community building interests.
+</p>
+
+<p class="powered-by copyright-license-text">
+This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+</p>
+
+<p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC icon" width="32px">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="CC by icon" width="32px">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="CC NC icon" width="32px">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="CC SA icon" width="32px">
+    </a>
+</p>
+
+<div id="clustrmaps-widget"></div><script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Zo-deincaJGsqhqjIWsujtdoNOMJsnnZLefKmxDKVv8&co=124b73&cmo=dd53ff&cmn=4ec724'></script>
+
+<p class="powered-by">
+Published with <a href="https://bookdown.org/" target="_blank" rel="noopener">Bookdown</a>
+</p>
+
+</center>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45299226-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-45299226-1');
+</script>
+
+</footer>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="spatiallibd.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
