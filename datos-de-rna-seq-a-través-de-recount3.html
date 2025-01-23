@@ -300,11 +300,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Después tenemos que identificar un estudio de interes y determinar si queremos accesar la información a nivel de genes, exones, etc. Sabiendo el estudio de interes, podemos descargar los datos usando la función <code>create_rse()</code> como mostramos a continuación. <code>create_rse()</code> tiene argumentos con los cuales podemos especificar la <strong>anotación</strong> que queremos usar (las opciones dependen del organismo).</p>
 <div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb58-1" tabindex="-1"></a><span class="do">## Revisemos todos los proyectos con datos de humano en recount3</span></span>
 <span id="cb58-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb58-2" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2025-01-23 22:28:52.418202 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:14.98122 caching file sra.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/sra.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:28:53.677921 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:16.028296 caching file gtex.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/gtex/metadata/gtex.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:28:54.827551 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:17.105922 caching file tcga.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/tcga/metadata/tcga.recount_project.MD.gz&#39;</code></pre>
 <div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb65-1" tabindex="-1"></a><span class="do">## Encuentra tu proyecto de interés. Aquí usaremos</span></span>
 <span id="cb65-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb65-2" tabindex="-1"></a><span class="do">## SRP009615 de ejemplo</span></span>
@@ -315,24 +315,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb65-7"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb65-7" tabindex="-1"></a><span class="do">## Crea un objeto de tipo RangedSummarizedExperiment (RSE)</span></span>
 <span id="cb65-8"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb65-8" tabindex="-1"></a><span class="do">## con la información a nivel de genes</span></span>
 <span id="cb65-9"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb65-9" tabindex="-1"></a>rse_gene_SRP009615 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(proj_info)</span></code></pre></div>
-<pre><code>## 2025-01-23 22:28:59.731207 downloading and reading the metadata.</code></pre>
-<pre><code>## 2025-01-23 22:29:00.041409 caching file sra.sra.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:22.092774 downloading and reading the metadata.</code></pre>
+<pre><code>## 2025-01-23 22:38:22.396405 caching file sra.sra.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.sra.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:29:01.01401 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:23.404535 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_project.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:29:02.063508 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:24.511725 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:29:03.256562 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:25.627928 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_seq_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:29:04.46664 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:26.69082 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_pred.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:29:05.349267 downloading and reading the feature information.</code></pre>
-<pre><code>## 2025-01-23 22:29:05.663823 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:27.39871 downloading and reading the feature information.</code></pre>
+<pre><code>## 2025-01-23 22:38:27.724018 caching file human.gene_sums.G026.gtf.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/annotations/gene_sums/human.gene_sums.G026.gtf.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:29:06.735795 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
-<pre><code>## 2025-01-23 22:29:07.013718 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
+<pre><code>## 2025-01-23 22:38:29.028795 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
+<pre><code>## 2025-01-23 22:38:29.309703 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/15/SRP009615/sra.gene_sums.SRP009615.G026.gz&#39;</code></pre>
-<pre><code>## 2025-01-23 22:29:07.908575 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2025-01-23 22:38:30.188165 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb84-1" tabindex="-1"></a><span class="do">## Explora el objeto RSE</span></span>
 <span id="cb84-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb84-2" tabindex="-1"></a>rse_gene_SRP009615</span></code></pre></div>
 <pre><code>## class: RangedSummarizedExperiment 
