@@ -105,26 +105,26 @@
 ## usethis::use_github()
 
 
-## git clone https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024.git
+## git clone https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025.git
 ## 
 ## ## Si tienen su SSH key configurarda pueden usar
 ## ## Info sobre SSH keys de GitHub:
 ## ## https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-## git clone git@github.com:lcolladotor/rnaseq_LCG-UNAM_2024.git
+## git clone git@github.com:lcolladotor/rnaseq_LCG-UNAM_2025.git
 
 ## ----clone_repo, eval = FALSE----------
 ## ## Opción más nueva:
 ## library("gert")
 ## repo <- git_clone(
-##     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024",
-##     "~/Desktop/rnaseq_LCG-UNAM_2024"
+##     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025",
+##     "~/Desktop/rnaseq_LCG-UNAM_2025"
 ## )
 ## setwd(repo)
 ## 
 ## ## Otra opción:
 ## git2r::clone(
-##     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024",
-##     "~/Desktop/rnaseq_LCG-UNAM_2024"
+##     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025",
+##     "~/Desktop/rnaseq_LCG-UNAM_2025"
 ## )
 
 

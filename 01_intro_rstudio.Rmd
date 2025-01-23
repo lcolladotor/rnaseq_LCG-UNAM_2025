@@ -30,7 +30,7 @@
     -   <https://github.com/ComunidadBioInfo/cdsb2020/blob/master/presentaciones_flujos-de-trabajo/Introduccion-al-flujo-de-trabajo-orientado-a-proyectos.pdf>
 -   Puedes tener páginas web estáticas
     -   <https://pages.github.com/>
-    -   <https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024>. En especial <https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024/tree/gh-pages> se convierte en <http://lcolladotor.github.io/rnaseq_LCG-UNAM_2024/>
+    -   <https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025>. En especial <https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025/tree/gh-pages> se convierte en <http://lcolladotor.github.io/rnaseq_LCG-UNAM_2025/>
     -   Página personal: <https://github.com/lcolladotor/lcolladotor.github.com> se convierte en <http://lcolladotor.github.io/>. Está todo hecho con <https://github.com/lcolladotor/lcolladotorsource>
 -   Tip: usen el mismo nombre de usuario en GitHub, Twitter, Gmail, etc.
     -   How to be a Modern Scientist: <https://lcolladotor.github.io/bioc_team_ds/how-to-be-a-modern-scientist.html>
@@ -200,17 +200,17 @@ Una vez que termines, agrega la liga al repositorio con tus notas del curso en e
 
 ## Material del curso
 
--   Pueden descargar la versión estática con `usethis::use_course('lcolladotor/rnaseq_LCG-UNAM_2024')`
--   Pueden verlo en línea a través de [**lcolladotor.github.io/rnaseq_LCG-UNAM_2024**](http://lcolladotor.github.io/rnaseq_LCG-UNAM_2024)
+-   Pueden descargar la versión estática con `usethis::use_course('lcolladotor/rnaseq_LCG-UNAM_2025')`
+-   Pueden verlo en línea a través de [**lcolladotor.github.io/rnaseq_LCG-UNAM_2025**](http://lcolladotor.github.io/rnaseq_LCG-UNAM_2025)
 -   Pueden **clonarlo** desde GitHub de tal forma que podrán actualizarlo fácilmente usando *git pull*
 
 ```{bash clone_course, eval = FALSE}
-git clone https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024.git
+git clone https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025.git
 
 ## Si tienen su SSH key configurarda pueden usar
 ## Info sobre SSH keys de GitHub: 
 ## https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-git clone git@github.com:lcolladotor/rnaseq_LCG-UNAM_2024.git
+git clone git@github.com:lcolladotor/rnaseq_LCG-UNAM_2025.git
 ```
 
 O desde R con:
@@ -219,15 +219,15 @@ O desde R con:
 ## Opción más nueva:
 library("gert")
 repo <- git_clone(
-    "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024",
-    "~/Desktop/rnaseq_LCG-UNAM_2024"
+    "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025",
+    "~/Desktop/rnaseq_LCG-UNAM_2025"
 )
 setwd(repo)
 
 ## Otra opción:
 git2r::clone(
-    "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2024",
-    "~/Desktop/rnaseq_LCG-UNAM_2024"
+    "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025",
+    "~/Desktop/rnaseq_LCG-UNAM_2025"
 )
 ```
 
