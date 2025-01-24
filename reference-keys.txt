@@ -14,6 +14,7 @@ configurar-git-y-github
 elegir-una-plantilla
 editar-con-su-información
 desplegar-la-página
+compartan-su-página
 introducción-a-bioconductor
 encontrando-paquetes-de-bioconductor
 estructura-de-un-paquete-de-bioc
