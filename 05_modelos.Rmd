@@ -1,6 +1,6 @@
 # Modelos estadísticos
 
-* Revisión de regresión lineal https://lcolladotor.github.io/bioc_team_ds/helping-others.html#linear-regression-example
+* Revisión de regresión lineal <https://lcolladotor.github.io/bioc_team_ds/helping-others.html#linear-regression-example>
 * Con R, usamos mucho la función `model.matrix()` y la sintáxis de fórmula `Y ~ X1 + X2` tal como en el siguiente ejemplo.
 
 ```{r model.matrix}
@@ -18,7 +18,7 @@ summary(lm(log(Volume) ~ log(Height) + log(Girth), data = trees))
 
 ## ExploreModelMatrix
 
-* Es un paquete de Bioconductor que nos ayuda a entender los modelos estadísticos que estamos usando gracias a visualizaciones http://www.bioconductor.org/packages/ExploreModelMatrix/ que está descrito en el siguiente artículo
+* Es un paquete de Bioconductor que nos ayuda a entender los modelos estadísticos que estamos usando gracias a visualizaciones <http://www.bioconductor.org/packages/ExploreModelMatrix/> que está descrito en el siguiente artículo
 * Revisaremos los ejemplos en http://www.bioconductor.org/packages/release/bioc/vignettes/ExploreModelMatrix/inst/doc/ExploreModelMatrix.html
 
 
@@ -55,11 +55,11 @@ if (interactive()) shiny::runApp(app)
 
 ### Ejemplo 2
 
-http://bioconductor.org/packages/release/bioc/vignettes/ExploreModelMatrix/inst/doc/ExploreModelMatrix.html#example-2
+<http://bioconductor.org/packages/release/bioc/vignettes/ExploreModelMatrix/inst/doc/ExploreModelMatrix.html#example-2>
 
 ### Ejemplo 3
 
-http://bioconductor.org/packages/release/bioc/vignettes/ExploreModelMatrix/inst/doc/ExploreModelMatrix.html#example-3
+<http://bioconductor.org/packages/release/bioc/vignettes/ExploreModelMatrix/inst/doc/ExploreModelMatrix.html#example-3>
 
 ### Ejercicio
 
@@ -70,16 +70,16 @@ http://bioconductor.org/packages/release/bioc/vignettes/ExploreModelMatrix/inst/
 
 _A guide to creating design matrices for gene expression experiments_:
 
-* http://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html
-* https://f1000research.com/articles/9-1444
+* <http://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html>
+* Artículo relacionado: <https://doi.org/10.12688/f1000research.27893.1>
 
 _“Model matrix not full rank”_
 
-* http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#model-matrix-not-full-rank
+* <http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#model-matrix-not-full-rank>
 
 ## Datos de SRP045638
 
-Vamos a usar datos de https://www.ncbi.nlm.nih.gov/sra/?term=SRP045638 procesados con `recount3`. Primero hay que descargar los datos con los comandos que vimos ayer.
+Vamos a usar datos de <https://www.ncbi.nlm.nih.gov/sra/?term=SRP045638> procesados con `recount3`. Primero hay que descargar los datos con los comandos que vimos ayer.
 
 ```{r download_SRP045638}
 library("recount3")
@@ -191,8 +191,8 @@ Ahora ya estamos listos para continuar con el análisis de expresión diferencia
 
 ## Normalización de datos
 
-* Lean _A hypothetical scenario_ en uno de los artículos sobre `edgeR` https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-3-r25#Sec2 para entender un poco sobre el concepto de _composition bias_.
-* Sigue siendo relevante con datos de scRNA-seq como pueden ver en https://bioconductor.org/books/3.18/OSCA.multisample/multi-sample-comparisons.html#performing-the-de-analysis. Ahí descubren una serie de pasos para usar métodos desarrollados para bulk RNA-seq y como se pueden usar en scRNA-seq.
+* Lean _A hypothetical scenario_ en uno de los artículos sobre `edgeR` <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-3-r25#Sec2> para entender un poco sobre el concepto de _composition bias_.
+* Sigue siendo relevante con datos de scRNA-seq como pueden ver en <https://bioconductor.org/books/3.20/OSCA.multisample/multi-sample-comparisons.html#performing-the-de-analysi>. Ahí descubren una serie de pasos para usar métodos desarrollados para bulk RNA-seq y como se pueden usar en scRNA-seq.
 
 
 ```{r normalize}
@@ -258,9 +258,9 @@ volcanoplot(eb_results, coef = 2, highlight = 3, names = de_results$gene_name)
 de_results[de_results$gene_name %in% c("ZSCAN2", "VASH2", "KIAA0922"), ]
 ```
 
-* https://www.genecards.org/cgi-bin/carddisp.pl?gene=ZSCAN2
-* https://www.genecards.org/cgi-bin/carddisp.pl?gene=VASH2
-* https://www.genecards.org/cgi-bin/carddisp.pl?gene=KIAA0922
+* <https://www.genecards.org/cgi-bin/carddisp.pl?gene=ZSCAN2>
+* <https://www.genecards.org/cgi-bin/carddisp.pl?gene=VASH2>
+* <https://www.genecards.org/cgi-bin/carddisp.pl?gene=KIAA0922>
 
 ## Visualizando genes DE
 
@@ -325,16 +325,16 @@ Pistas:
 
 Algunxs de lxs autores de `ExploreModelMatrix`:
 
-* https://bsky.app/profile/csoneson.bsky.social
-* https://twitter.com/FedeBioinfo
-* https://twitter.com/mikelove
+* <https://bsky.app/profile/csoneson.bsky.social>
+* <https://bsky.app/profile/federicomarini.bsky.social>
+* <https://bsky.app/profile/mikelove.bsky.social>
 
 Algunxs de lxs autores de `edgeR` y `limma`:
 
-* https://twitter.com/mritchieau
-* https://twitter.com/davisjmcc
-* https://twitter.com/markrobinsonca
-* https://twitter.com/AliciaOshlack
+* <https://bsky.app/profile/mritchieau.bsky.social>
+* <https://bsky.app/profile/davisjmcc.bsky.social>
+* <https://bsky.app/profile/markrobinsonca.bsky.social>
+* <https://bsky.app/profile/aliciao.bsky.social>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you&#39;ve ever been dazed by design matrices or confused by contrasts when performing gene expression analysis in limma, the new article by Charity Law is for you <a href="https://t.co/ZSMOA20tdm">https://t.co/ZSMOA20tdm</a> <a href="https://twitter.com/hashtag/bioconductor?src=hash&amp;ref_src=twsrc%5Etfw">#bioconductor</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> (1/2)</p>&mdash; Matt Ritchie (@mritchieau) <a href="https://twitter.com/mritchieau/status/1338639551128952832?ref_src=twsrc%5Etfw">December 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -434,11 +434,11 @@ ComplexHeatmap::pheatmap(
 * Con datos de algún estudio disponible vía `recount3`, hagan un análisis de expresión diferencial.
 * Incluyan al menos 3 gráficas en su reporte.
 * Incluyan al menos un párrafo de interpretación biológica de los resultados.
-* Su reporte debe ser público y estar listado en [la página del curso](https://cursos.lcg.unam.mx/course/view.php?id=197#section-2).
+* Su reporte debe ser público y estar listado en [la página del curso](https://cursos.lcg.unam.mx/course/view.php?id=235).
 
 Suena fácil, pero cada estudio tiene sus complejidades.
 
-Hay muchos paquetes que no vimos que les pueden llamar la atención, tal como `r BiocStyle::Biocpkg("ideal")`. En http://research.libd.org/SPEAQeasy-example/bootcamp_intro pueden encontrar varias gráficas que tal vez les quieran reproducir. En fin, ¡esto solo es el inicio!
+Hay muchos paquetes que no vimos que les pueden llamar la atención, tal como `r BiocStyle::Biocpkg("ideal")`. En <http://research.libd.org/SPEAQeasy-example/bootcamp_intro> o en <https://lcolladotor.github.io/cshl_rstats_genome_scale_2024/> pueden encontrar varias gráficas que tal vez les quieran reproducir. En fin, ¡esto solo es el inicio!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎉🎉🎉Our new MS is finally out! Given the timing, Santa had an early round with us 🎅<br>💡<a href="https://t.co/a0dHFGWN7V">https://t.co/a0dHFGWN7V</a>, &quot;ideal: an R/Bioconductor package for interactive differential expression analysis&quot;.<br><br>I promise a proper <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> hexsticker will follow, for now enjoy the package 😉</p>&mdash; Federico Marini (@FedeBioinfo) <a href="https://twitter.com/FedeBioinfo/status/1336944561592078336?ref_src=twsrc%5Etfw">December 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
