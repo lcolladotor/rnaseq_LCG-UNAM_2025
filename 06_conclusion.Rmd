@@ -235,12 +235,13 @@ https://twitter.com/PardoBree
 
 # Comunidad
 
+* <https://mircommunity.com/>
 * <https://bsky.app/profile/rainbowr.org>
 * https://twitter.com/conecta_R
 * <https://bsky.app/profile/latinrconf.bsky.social>
-* https://twitter.com/RConsortium
-* https://twitter.com/rweekly_org
-* https://twitter.com/RLadiesGlobal
+* <https://r-consortium.org/>
+* <https://rweekly.org/>
+* <https://bsky.app/profile/rladies.org>
 * https://twitter.com/RLadiesBmore
 * https://twitter.com/search?q=%23RLadiesMX&src=typed_query
 
