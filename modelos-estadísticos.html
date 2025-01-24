@@ -393,32 +393,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="modelos-estadísticos.html#cb100-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;recount3&quot;</span>)</span>
 <span id="cb100-2"><a href="modelos-estadísticos.html#cb100-2" tabindex="-1"></a></span>
 <span id="cb100-3"><a href="modelos-estadísticos.html#cb100-3" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2025-01-24 15:31:16.150522 caching file sra.recount_project.MD.gz.</code></pre>
-<pre><code>## 2025-01-24 15:31:16.493604 caching file gtex.recount_project.MD.gz.</code></pre>
-<pre><code>## 2025-01-24 15:31:16.823205 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:23.307733 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:23.766452 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:24.202731 caching file tcga.recount_project.MD.gz.</code></pre>
 <div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="modelos-estadísticos.html#cb104-1" tabindex="-1"></a>rse_gene_SRP045638 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(</span>
 <span id="cb104-2"><a href="modelos-estadísticos.html#cb104-2" tabindex="-1"></a>    <span class="fu">subset</span>(</span>
 <span id="cb104-3"><a href="modelos-estadísticos.html#cb104-3" tabindex="-1"></a>        human_projects,</span>
 <span id="cb104-4"><a href="modelos-estadísticos.html#cb104-4" tabindex="-1"></a>        project <span class="sc">==</span> <span class="st">&quot;SRP045638&quot;</span> <span class="sc">&amp;</span> project_type <span class="sc">==</span> <span class="st">&quot;data_sources&quot;</span></span>
 <span id="cb104-5"><a href="modelos-estadísticos.html#cb104-5" tabindex="-1"></a>    )</span>
 <span id="cb104-6"><a href="modelos-estadísticos.html#cb104-6" tabindex="-1"></a>)</span></code></pre></div>
-<pre><code>## 2025-01-24 15:31:18.852103 downloading and reading the metadata.</code></pre>
-<pre><code>## 2025-01-24 15:31:19.353057 caching file sra.sra.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:26.14474 downloading and reading the metadata.</code></pre>
+<pre><code>## 2025-01-24 15:41:26.590974 caching file sra.sra.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.sra.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:31:20.421183 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:28.02807 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_project.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:31:21.284014 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:29.310732 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:31:22.340378 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:30.647733 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_seq_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:31:23.389436 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:31.988536 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_pred.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:31:24.234508 downloading and reading the feature information.</code></pre>
-<pre><code>## 2025-01-24 15:31:24.550427 caching file human.gene_sums.G026.gtf.gz.</code></pre>
-<pre><code>## 2025-01-24 15:31:24.956872 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
-<pre><code>## 2025-01-24 15:31:25.257629 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:32.935584 downloading and reading the feature information.</code></pre>
+<pre><code>## 2025-01-24 15:41:33.398613 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2025-01-24 15:41:33.788559 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
+<pre><code>## 2025-01-24 15:41:34.194061 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/38/SRP045638/sra.gene_sums.SRP045638.G026.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:31:26.695339 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2025-01-24 15:41:35.566954 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="modelos-estadísticos.html#cb122-1" tabindex="-1"></a><span class="fu">assay</span>(rse_gene_SRP045638, <span class="st">&quot;counts&quot;</span>) <span class="ot">&lt;-</span> <span class="fu">compute_read_counts</span>(rse_gene_SRP045638)</span></code></pre></div>
 <p>Una vez descargados y con los números de lecturas podemos usar <code>expand_sra_attributes()</code>. Sin embargo, tenemos un problema con estos datos.</p>
 <div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="modelos-estadísticos.html#cb123-1" tabindex="-1"></a>rse_gene_SRP045638<span class="sc">$</span>sra.sample_attributes[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
