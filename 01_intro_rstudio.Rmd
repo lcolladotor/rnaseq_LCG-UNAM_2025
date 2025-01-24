@@ -33,7 +33,7 @@
 -   Tip: usen el mismo nombre de usuario en GitHub, Twitter, Gmail, etc.
     -   How to be a Modern Scientist: <https://lcolladotor.github.io/bioc_team_ds/how-to-be-a-modern-scientist.html>
     
-## GitHub Education
+## GitHub Education y el uso de AI para escribir código
 
 * Es para obtener acceso gratiuto a GitHub Pro y GitHub Copilot. En <https://github.com/education/students> vienen los detalles y los pasos a seguir.
 * Hagan su cuenta de GitHub usando su email de la LCG-UNAM (tiene que ser un email de una institución académica). Así podrán completar la solicitud para el GitHub Education pack vía <https://education.github.com/discount_requests/application>.
@@ -48,6 +48,90 @@
     - "Show me how to use the here package"
     - "Muestrame como usar el paquete de here"
     - "Muestrame como usar el paquete de here con comentarios en español"
+* Alternativamente, pueden usar <https://bard.google.com/> u otros sitios web como <https://bing.com/chat>.
+  - "Show me how to use the SummarizedExperiment package in Spanish"
+  - "How do you download data with recount3"
+  - Para usar Google Gemini desde R se puede con <https://jhk0530.github.io/gemini.R/>
+  - <https://ellmer.tidyverse.org/> para otros LLMs
+
+```{r ellmer_demo, eval = FALSE}
+install.packages("ellmer")
+
+library("ellmer")
+chat <- chat_github()
+live_console(chat)
+## Ejemplo 1: What is my name?
+## Ejemplo 2: Who created R?
+## Ejemplo 3: How many Bioconductor packages are there right now?
+## 
+## Salir con Q
+```
+
+* <https://simonpcouch.github.io/pal/> puede ayudar con unas tareas específicas de programación que son repetitivas pero a la vez más complicadas de lograr vía prompts
+
+```{r pal_demo, eval = FALSE}
+## Instalar pal
+install.packages("pak")
+pak::pak("simonpcouch/pal")
+
+## Probar pal
+library("pal")
+options(
+  .pal_fn = "chat_github"
+)
+pal_roxygen <- .init_pal("roxygen")
+cat(
+    pal_roxygen$chat("foo <- function(hola) {
+        print(hola)
+    }")
+)
+
+## En teoria funciona, pero no me ha funcionado a mi
+## como lo reporté en https://github.com/simonpcouch/pal/issues/79
+rlang::abort("`save_pred` can only be used if the initial results saved predictions.")
+
+## Igual con este ejemplo
+foo <- function(hola) {
+    print(hola)
+}
+```
+
+* Más sobre AI y Posit (antes RStudio)
+  - <https://blogs.rstudio.com/ai/>
+  - <https://mlverse.github.io/mall/> para hacer "sentiment analysis"
+  - <https://github.com/mlverse> para paquetes de `mlverse`
+  - <https://mlverse.github.io/lang/> para traducir la ayuda de paquetes a tu idioma
+
+```{r lang_demo, eval = FALSE}
+## 1. Installa el paquete de mall
+install.packages("mall")
+
+## 2. Instala Ollama desde https://ollama.com/download
+
+## 3. installa ollamar
+install.packages("ollamar")
+
+## 4. Descarga un LLM, tipo llama3.2
+ollamar::pull("llama3.2")
+
+## 5. Instala lang
+install.packages("pak")
+pak::pak("mlverse/lang")
+
+## 6. Checa cual es tu lenguaje
+Sys.getenv("LANG")
+## 6b. Cambia tu lenguaje si quieres
+Sys.setenv(LANGUAGE = "Spanish")
+## 6c. Para hacerlo de forma más permanente edita tu ~/.Renviron con
+## usethis::edit_r_environ()
+
+## 7. Prueba lang
+library("lang")
+llm_use("ollama", "llama3.2", seed = 100)
+?lm
+## 7b. Para hacerlo de forma más permanente edita tu ~/.Rprofile con
+## usethis::edit_r_profile()
+```
 
 
 ## RStudio
