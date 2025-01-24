@@ -41,6 +41,15 @@
 
 <img src="images/GitHub_Copilot_RStudio_config.png" width="500px" />
 
+* Una vez que tengan GitHub Copilot configurado en RStudio, podrán usar <https://cran.r-project.org/package=chattr> para usar GitHub Copilot vía `chattr::chattr_app()`.
+  - <https://mlverse.github.io/chattr/index.html>
+  - <https://mlverse.github.io/chattr/articles/copilot-chat.html>
+  - Prompts de ejemplo:
+    - "Show me how to use the here package"
+    - "Muestrame como usar el paquete de here"
+    - "Muestrame como usar el paquete de here con comentarios en español"
+
+
 ## RStudio
 
 -   RStudio Desktop es gratis <http://www.rstudio.com/products/rstudio/download/preview/>
