@@ -1,7 +1,7 @@
 introducción-a-r-y-rstudio
 r
 github
-github-education
+github-education-y-el-uso-de-ai-para-escribir-código
 rstudio
 material-del-curso
 actividad-postcards
