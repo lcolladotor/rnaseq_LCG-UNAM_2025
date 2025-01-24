@@ -190,6 +190,8 @@ if (interactive()) {
 
 ¿Quieres más datos? Tenemos muchos en LIBD incluyendo http://eqtl.brainseq.org/phase2/.
 
+¿Quieres aprender más sobre `shiny`? Checa <https://shiny.posit.co/blog/posts/shiny-assistant/> para hacer aplicaciones web de `shiny` usando AI.
+
 # R/Bioconductor-powered Team Data Science
 
 <https://lcolladotor.github.io/>
