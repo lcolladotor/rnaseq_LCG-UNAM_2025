@@ -188,9 +188,9 @@ if (interactive()) {
 }
 ```
 
-¿Quieres más datos? Tenemos muchos en LIBD incluyendo http://eqtl.brainseq.org/phase2/.
-
-¿Quieres aprender más sobre `shiny`? Checa <https://shiny.posit.co/blog/posts/shiny-assistant/> para hacer aplicaciones web de `shiny` usando AI.
+* ¿Quieres más datos? Tenemos muchos en LIBD incluyendo http://eqtl.brainseq.org/phase2/.
+* ¿Quieres aprender más sobre `shiny`? Checa <https://shiny.posit.co/blog/posts/shiny-assistant/> para hacer aplicaciones web de `shiny` usando AI.
+  - Ejemplo: "Create an app that uses the here package to load a csv file and makes an interactive plot with plotly."
 
 # R/Bioconductor-powered Team Data Science
 
