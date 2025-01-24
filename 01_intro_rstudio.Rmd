@@ -7,19 +7,17 @@
 -   Para explorar que se puede hacer con R:
     -   R Weekly <https://rweekly.org/>
     -   R Bloggers <https://www.r-bloggers.com/>
-    -   Twitter <https://twitter.com/search?q=%23rstats&src=typed_query>
-    -   Twitter en español <https://twitter.com/search?q=%23rstatsES&src=typed_query>
-    -   TidyTuesday <https://twitter.com/search?q=%23TidyTuesday&src=typed_query>
-    -   DatosDeMiercoles <https://twitter.com/search?q=%23datosdemiercoles&src=typed_query>
+    -   Bluesky <https://bsky.app/search?q=%23rstats>
+    -   Bluesky en español <https://bsky.app/search?q=%23rstatsES>
+    -   TidyTuesday <https://bsky.app/search?q=%23TidyTuesday>
 -   Para pedir ayuda hay muchas opciones
     -   <https://lcolladotor.github.io/bioc_team_ds/how-to-ask-for-help.html>
 -   Material en el que estoy involucrado:
-    -   <https://twitter.com/lcolladotor>
-    -   <https://bsky.app/profile/lcolladotor.bsky.social>
-    -   <https://www.youtube.com/c/LeonardoColladoTorres/playlists>
+    -   <https://twitter.com/lcolladotor> (originalmente)
+    -   <https://bsky.app/profile/lcolladotor.bsky.social> (principal medio actualmente)
+    -   <https://www.youtube.com/@lcolladotor>
     -   LIBD rstats club <https://docs.google.com/spreadsheets/d/1is8dZSd0FZ9Qi1Zvq1uRhm-P1McnJRd_zxdAfCRoMfA/edit?usp=sharing>
-    -   <https://twitter.com/CDSBMexico> y <https://twitter.com/LIBDrstats>
-    -   <https://twitter.com/Bioconductor>
+    -   <https://bsky.app/profile/cdsbmexico.bsky.social> y <https://bsky.app/profile/libdrstats.bsky.social>
 
 <img src="icon_192.png"/>
 
@@ -294,7 +292,7 @@ En el mismo se encuentran las diapositivas: <https://github.com/Melii99/rnaseq_2
     - https://davidgonilski.github.io/ vía https://github.com/davidgonilski/davidgonilski.github.io.
 
 
-También pueden revisar https://lcolladotor.github.io/jhustatcomputing2023/projects/project-0/.
+También pueden revisar <https://lcolladotor.github.io/jhustatcomputing/projects/project-0/>.
 
 ### Instalación
 
@@ -401,3 +399,7 @@ o directamente:
 ## Desplegar la página GitHub
 rmarkdown::render("index.Rmd")
 ```
+
+### Compartan su página
+
+Sientanse libres de compartir su página con el mundo. Si usan Bluesky, usen el hashtag #postcards y etiqueten al autor @seankross.com <https://bsky.app/profile/seankross.com>.
