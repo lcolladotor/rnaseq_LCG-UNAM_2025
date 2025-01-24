@@ -131,7 +131,7 @@ You will also need to install [RStudio](https://rstudio.com/products/rstudio/dow
   
 The final grade will be a weighted average from the evaluation by the TA (20%), your public work (40%) and your final project (40%).
 
-Projects, public work and notes are due at 9 am US Eastern on Monday February 12th, though we recommend doing any work related to this course by Friday February 9th.
+Projects, public work and notes are due at 9 am US Eastern on Monday February 10th, though we recommend doing any work related to this course by Friday February 7th.
 
 ## R session information {-}
 
