@@ -379,7 +379,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><em>A guide to creating design matrices for gene expression experiments</em>:</p>
 <ul>
 <li><a href="http://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html" class="uri">http://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html</a></li>
-<li><a href="https://f1000research.com/articles/9-1444" class="uri">https://f1000research.com/articles/9-1444</a></li>
+<li>Artículo relacionado: <a href="https://doi.org/10.12688/f1000research.27893.1" class="uri">https://doi.org/10.12688/f1000research.27893.1</a></li>
 </ul>
 <p><em>“Model matrix not full rank”</em></p>
 <ul>
@@ -393,32 +393,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="modelos-estadísticos.html#cb100-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;recount3&quot;</span>)</span>
 <span id="cb100-2"><a href="modelos-estadísticos.html#cb100-2" tabindex="-1"></a></span>
 <span id="cb100-3"><a href="modelos-estadísticos.html#cb100-3" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2025-01-24 15:56:21.096658 caching file sra.recount_project.MD.gz.</code></pre>
-<pre><code>## 2025-01-24 15:56:21.462195 caching file gtex.recount_project.MD.gz.</code></pre>
-<pre><code>## 2025-01-24 15:56:21.851096 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:35.678608 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:36.220841 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:36.57062 caching file tcga.recount_project.MD.gz.</code></pre>
 <div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="modelos-estadísticos.html#cb104-1" tabindex="-1"></a>rse_gene_SRP045638 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(</span>
 <span id="cb104-2"><a href="modelos-estadísticos.html#cb104-2" tabindex="-1"></a>    <span class="fu">subset</span>(</span>
 <span id="cb104-3"><a href="modelos-estadísticos.html#cb104-3" tabindex="-1"></a>        human_projects,</span>
 <span id="cb104-4"><a href="modelos-estadísticos.html#cb104-4" tabindex="-1"></a>        project <span class="sc">==</span> <span class="st">&quot;SRP045638&quot;</span> <span class="sc">&amp;</span> project_type <span class="sc">==</span> <span class="st">&quot;data_sources&quot;</span></span>
 <span id="cb104-5"><a href="modelos-estadísticos.html#cb104-5" tabindex="-1"></a>    )</span>
 <span id="cb104-6"><a href="modelos-estadísticos.html#cb104-6" tabindex="-1"></a>)</span></code></pre></div>
-<pre><code>## 2025-01-24 15:56:23.893911 downloading and reading the metadata.</code></pre>
-<pre><code>## 2025-01-24 15:56:24.216783 caching file sra.sra.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:38.551278 downloading and reading the metadata.</code></pre>
+<pre><code>## 2025-01-24 16:02:38.854485 caching file sra.sra.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.sra.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:56:25.204432 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:40.011019 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_project.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:56:26.197237 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:41.156394 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:56:27.327792 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:42.259887 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_seq_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:56:28.460792 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:43.298369 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_pred.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:56:29.273417 downloading and reading the feature information.</code></pre>
-<pre><code>## 2025-01-24 15:56:29.683818 caching file human.gene_sums.G026.gtf.gz.</code></pre>
-<pre><code>## 2025-01-24 15:56:30.07572 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
-<pre><code>## 2025-01-24 15:56:30.372981 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:43.99532 downloading and reading the feature information.</code></pre>
+<pre><code>## 2025-01-24 16:02:44.321879 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2025-01-24 16:02:44.705142 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
+<pre><code>## 2025-01-24 16:02:45.085315 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/38/SRP045638/sra.gene_sums.SRP045638.G026.gz&#39;</code></pre>
-<pre><code>## 2025-01-24 15:56:31.689652 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2025-01-24 16:02:46.383181 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="modelos-estadísticos.html#cb122-1" tabindex="-1"></a><span class="fu">assay</span>(rse_gene_SRP045638, <span class="st">&quot;counts&quot;</span>) <span class="ot">&lt;-</span> <span class="fu">compute_read_counts</span>(rse_gene_SRP045638)</span></code></pre></div>
 <p>Una vez descargados y con los números de lecturas podemos usar <code>expand_sra_attributes()</code>. Sin embargo, tenemos un problema con estos datos.</p>
 <div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="modelos-estadísticos.html#cb123-1" tabindex="-1"></a>rse_gene_SRP045638<span class="sc">$</span>sra.sample_attributes[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
@@ -562,7 +562,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">5.3</span> Normalización de datos<a href="#normalizaci%C3%B3n-de-datos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Lean <em>A hypothetical scenario</em> en uno de los artículos sobre <code>edgeR</code> <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-3-r25#Sec2" class="uri">https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-3-r25#Sec2</a> para entender un poco sobre el concepto de <em>composition bias</em>.</li>
-<li>Sigue siendo relevante con datos de scRNA-seq como pueden ver en <a href="https://bioconductor.org/books/3.18/OSCA.multisample/multi-sample-comparisons.html#performing-the-de-analysis" class="uri">https://bioconductor.org/books/3.18/OSCA.multisample/multi-sample-comparisons.html#performing-the-de-analysis</a>. Ahí descubren una serie de pasos para usar métodos desarrollados para bulk RNA-seq y como se pueden usar en scRNA-seq.</li>
+<li>Sigue siendo relevante con datos de scRNA-seq como pueden ver en <a href="https://bioconductor.org/books/3.20/OSCA.multisample/multi-sample-comparisons.html#performing-the-de-analysi" class="uri">https://bioconductor.org/books/3.20/OSCA.multisample/multi-sample-comparisons.html#performing-the-de-analysi</a>. Ahí descubren una serie de pasos para usar métodos desarrollados para bulk RNA-seq y como se pueden usar en scRNA-seq.</li>
 </ul>
 <div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="modelos-estadísticos.html#cb147-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;edgeR&quot;</span>) <span class="co"># BiocManager::install(&quot;edgeR&quot;, update = FALSE)</span></span>
 <span id="cb147-2"><a href="modelos-estadísticos.html#cb147-2" tabindex="-1"></a>dge <span class="ot">&lt;-</span> <span class="fu">DGEList</span>(</span>
@@ -704,15 +704,15 @@ Por ejemplo, usando el paquete de <a href="https://bioconductor.org/packages/var
 <p>Algunxs de lxs autores de <code>ExploreModelMatrix</code>:</p>
 <ul>
 <li><a href="https://bsky.app/profile/csoneson.bsky.social" class="uri">https://bsky.app/profile/csoneson.bsky.social</a></li>
-<li><a href="https://twitter.com/FedeBioinfo" class="uri">https://twitter.com/FedeBioinfo</a></li>
-<li><a href="https://twitter.com/mikelove" class="uri">https://twitter.com/mikelove</a></li>
+<li><a href="https://bsky.app/profile/federicomarini.bsky.social" class="uri">https://bsky.app/profile/federicomarini.bsky.social</a></li>
+<li><a href="https://bsky.app/profile/mikelove.bsky.social" class="uri">https://bsky.app/profile/mikelove.bsky.social</a></li>
 </ul>
 <p>Algunxs de lxs autores de <code>edgeR</code> y <code>limma</code>:</p>
 <ul>
-<li><a href="https://twitter.com/mritchieau" class="uri">https://twitter.com/mritchieau</a></li>
-<li><a href="https://twitter.com/davisjmcc" class="uri">https://twitter.com/davisjmcc</a></li>
-<li><a href="https://twitter.com/markrobinsonca" class="uri">https://twitter.com/markrobinsonca</a></li>
-<li><a href="https://twitter.com/AliciaOshlack" class="uri">https://twitter.com/AliciaOshlack</a></li>
+<li><a href="https://bsky.app/profile/mritchieau.bsky.social" class="uri">https://bsky.app/profile/mritchieau.bsky.social</a></li>
+<li><a href="https://bsky.app/profile/davisjmcc.bsky.social" class="uri">https://bsky.app/profile/davisjmcc.bsky.social</a></li>
+<li><a href="https://bsky.app/profile/markrobinsonca.bsky.social" class="uri">https://bsky.app/profile/markrobinsonca.bsky.social</a></li>
+<li><a href="https://bsky.app/profile/aliciao.bsky.social" class="uri">https://bsky.app/profile/aliciao.bsky.social</a></li>
 </ul>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -848,10 +848,10 @@ If you've ever been dazed by design matrices or confused by contrasts when perfo
 <li>Con datos de algún estudio disponible vía <code>recount3</code>, hagan un análisis de expresión diferencial.</li>
 <li>Incluyan al menos 3 gráficas en su reporte.</li>
 <li>Incluyan al menos un párrafo de interpretación biológica de los resultados.</li>
-<li>Su reporte debe ser público y estar listado en <a href="https://cursos.lcg.unam.mx/course/view.php?id=197#section-2">la página del curso</a>.</li>
+<li>Su reporte debe ser público y estar listado en <a href="https://cursos.lcg.unam.mx/course/view.php?id=235">la página del curso</a>.</li>
 </ul>
 <p>Suena fácil, pero cada estudio tiene sus complejidades.</p>
-<p>Hay muchos paquetes que no vimos que les pueden llamar la atención, tal como <em><a href="https://bioconductor.org/packages/3.20/ideal">ideal</a></em>. En <a href="http://research.libd.org/SPEAQeasy-example/bootcamp_intro" class="uri">http://research.libd.org/SPEAQeasy-example/bootcamp_intro</a> pueden encontrar varias gráficas que tal vez les quieran reproducir. En fin, ¡esto solo es el inicio!</p>
+<p>Hay muchos paquetes que no vimos que les pueden llamar la atención, tal como <em><a href="https://bioconductor.org/packages/3.20/ideal">ideal</a></em>. En <a href="http://research.libd.org/SPEAQeasy-example/bootcamp_intro" class="uri">http://research.libd.org/SPEAQeasy-example/bootcamp_intro</a> o en <a href="https://lcolladotor.github.io/cshl_rstats_genome_scale_2024/" class="uri">https://lcolladotor.github.io/cshl_rstats_genome_scale_2024/</a> pueden encontrar varias gráficas que tal vez les quieran reproducir. En fin, ¡esto solo es el inicio!</p>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
 🎉🎉🎉Our new MS is finally out! Given the timing, Santa had an early round with us 🎅<br>💡<a href="https://t.co/a0dHFGWN7V">https://t.co/a0dHFGWN7V</a>, "ideal: an R/Bioconductor package for interactive differential expression analysis".<br><br>I promise a proper <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> hexsticker will follow, for now enjoy the package 😉
