@@ -7,26 +7,26 @@
 [_Original notes in English_](https://docs.google.com/document/d/1umDODmdQldf5w2lNDoFe-unmezHPonpCiKD270VwkrQ/edit?usp=sharing)
 
 * `rnaseqGene` workflow
-    - http://bioconductor.org/packages/release/BiocViews.html#___Workflow
-    - http://bioconductor.org/packages/release/workflows/html/rnaseqGene.html
-    - http://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html
+    - <http://bioconductor.org/packages/release/BiocViews.html#___Workflow>
+    - <http://bioconductor.org/packages/rnaseqGene>
+    - <http://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html>
 
 * `SummarizedExperiment`
-    - https://www.nature.com/articles/nmeth.3252 Figure 2
-    - http://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html
-    - Introducción a `SummarizedExperiment`:     - http://bioconductor.org/packages/release/bioc/vignettes/SummarizedExperiment/inst/doc/SummarizedExperiment.html
-    - Extendiendo `SummarizedExperiment`: http://bioconductor.org/packages/release/bioc/vignettes/SummarizedExperiment/inst/doc/Extensions.html
+    - <https://www.nature.com/articles/nmeth.3252> Figure 2
+    - <http://bioconductor.org/packages/SummarizedExperiment>
+    - Introducción a `SummarizedExperiment`:     - <http://bioconductor.org/packages/release/bioc/vignettes/SummarizedExperiment/inst/doc/SummarizedExperiment.html>
+    - Extendiendo `SummarizedExperiment`: <http://bioconductor.org/packages/release/bioc/vignettes/SummarizedExperiment/inst/doc/Extensions.html>
 
 * `GenomicRanges`
-    - http://bioconductor.org/packages/release/bioc/html/GenomicRanges.html
-    - https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003118
-    - Introducción a `GenomicRanges`: http://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html
+    - <http://bioconductor.org/packages/GenomicRanges>
+    - <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003118>
+    - Introducción a `GenomicRanges`: <http://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html>
 
 * `rtracklayer`
-    - http://bioconductor.org/packages/release/bioc/html/rtracklayer.html
-    - http://bioconductor.org/packages/release/bioc/vignettes/rtracklayer/inst/doc/rtracklayer.pdf
-    - Formato de archivos BED https://genome.ucsc.edu/FAQ/FAQformat.html#format1
-    - Formato de archivos GTF https://useast.ensembl.org/info/website/upload/gff.html
+    - <http://bioconductor.org/packages/rtracklayer>
+    - <http://bioconductor.org/packages/release/bioc/vignettes/rtracklayer/inst/doc/rtracklayer.pdf>
+    - Formato de archivos BED <https://genome.ucsc.edu/FAQ/FAQformat.html#format1>
+    - Formato de archivos GTF <https://useast.ensembl.org/info/website/upload/gff.html>
     
 ```{r first_rse}
 ## Lets build our first SummarizedExperiment object
@@ -101,8 +101,8 @@ rse[, c("A", "D", "F")]
 
 ## iSEE
 
-* http://bioconductor.org/packages/release/bioc/html/iSEE.html
-* http://bioconductor.org/packages/release/bioc/vignettes/iSEE/inst/doc/basic.html
+* <http://bioconductor.org/packages/iSEE>
+* <http://bioconductor.org/packages/release/bioc/vignettes/iSEE/inst/doc/basic.html>
 
 
 ```{r isee_basic, eval = FALSE}
@@ -114,11 +114,11 @@ iSEE::iSEE(rse)
 ## Ejercicio con spatialLIBD
 
 * Vamos a descargar datos de un objeto `SingleCellExperiment` que es similar a uno de `SummarizedExperiment`.
-    - http://bioconductor.org/packages/SingleCellExperiment
-    - http://bioconductor.org/packages/spatialLIBD
-    - https://doi.org/10.1038/s41593-020-00787-0
-    - https://osca.bioconductor.org/
-    - https://www.nature.com/articles/s41592-019-0654-x Figuras 2 y 3
+    - <http://bioconductor.org/packages/SingleCellExperiment>
+    - <http://bioconductor.org/packages/spatialLIBD>
+    - <https://doi.org/10.1038/s41593-020-00787-0>
+    - <https://osca.bioconductor.org/>
+    - <https://www.nature.com/articles/s41592-019-0654-x> Figuras 2 y 3
 
 ```{r download_sce_layer}
 ## Descarguemos unos datos de spatialLIBD
@@ -143,19 +143,19 @@ iSEE::iSEE(sce_layer)
 * ¿En qué capas se expresan más los genes _MOBP_ y _MBP_?
 
 ```
-ENSG00000168314
-ENSG00000183036
-ENSG00000197971
+ENSG00000168314 # MOBP
+ENSG00000183036 # PCP4
+ENSG00000197971 # MBP
 ```
 
 ## Comunidad
 
 Autores de `iSEE`:
 
-* Kévin Rue-Albrecht https://twitter.com/KevinRUE67
-* Federico Marini https://twitter.com/FedeBioinfo
-* Charlotte Soneson https://bsky.app/profile/csoneson.bsky.social
-* Aaron Lun https://twitter.com/realAaronLun
+* Kévin Rue-Albrecht <https://bsky.app/profile/kevinrue.bsky.social>
+* Federico Marini <https://bsky.app/profile/federicomarini.bsky.social>
+* Charlotte Soneson <https://bsky.app/profile/csoneson.bsky.social>
+* Aaron Lun <https://twitter.com/realAaronLun>
 * Otro ejemplo de exploración de datos usando `SummarizedExperiment` y `iSEE`:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today we explored RNA-seq data from <a href="https://twitter.com/StefanoBerto83?ref_src=twsrc%5Etfw">@StefanoBerto83</a> et al who made it easy to re-use. Thank you! ^^<a href="https://twitter.com/lcolladotor?ref_src=twsrc%5Etfw">@lcolladotor</a> used <a href="https://twitter.com/hashtag/shiny?src=hash&amp;ref_src=twsrc%5Etfw">#shiny</a> + <a href="https://twitter.com/hashtag/ggpubr?src=hash&amp;ref_src=twsrc%5Etfw">#ggpubr</a> as well as <a href="https://twitter.com/hashtag/iSEE?src=hash&amp;ref_src=twsrc%5Etfw">#iSEE</a><br><br>📔 <a href="https://t.co/iUQHE0xqRc">https://t.co/iUQHE0xqRc</a><br>🗞️ <a href="https://t.co/qhAdXbhY9c">https://t.co/qhAdXbhY9c</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/Bioconductor?ref_src=twsrc%5Etfw">@Bioconductor</a><a href="https://t.co/OXTukByhoo">https://t.co/OXTukByhoo</a></p>&mdash; LIBD rstats club (@LIBDrstats) <a href="https://twitter.com/LIBDrstats/status/1360349352250789890?ref_src=twsrc%5Etfw">February 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
