@@ -27,11 +27,13 @@ Teach assistants:
 
 * Danna Ocampo Luna [Bluesky](https://bsky.app/profile/genomic-swallow.bsky.social)
 
-<!--
 Guest presenters:
 
-* [Melissa Mayén Quiroz](https://melii99.github.io/), [Twitter](http://twitter.com/meli_mq99)
-* [Daianna González Padilla](https://daianna21.github.io/), [Twitter](https://twitter.com/daianna_glez)
+* [Renee García-Flores](https://reneegf.github.io/) [Bluesky](https://bsky.app/profile/freneegf.bsky.social)
+* [Daianna González Padilla](https://daianna21.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
+
+<!--
+* [Melissa Mayén Quiroz](https://melii99.github.io/), [Bluesky](https://bsky.app/profile/meli-mq99.bsky.social)
 -->
 
 Course Coordinators:
@@ -119,7 +121,7 @@ You will also need to install [RStudio](https://rstudio.com/products/rstudio/dow
 
 * Participation
   - (main evidence) written and/or verbal participation during class
-  - (optional, strongly encouraged for your own career) Community building: CDSB Slack (introduce yourself), Twitter, GitHub, etc.
+  - (optional, strongly encouraged for your own career) Community building: CDSB Slack (introduce yourself), Bluesky, GitHub, etc.
 * Public work
   - (main evidence) Taking notes on GitHub
   - (optional) Deploy an iSEE `shiny` app on shinyapps.io
