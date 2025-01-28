@@ -29,7 +29,7 @@ Teach assistants:
 
 Guest presenters:
 
-* [Renee García-Flores](https://reneegf.github.io/) [Bluesky](https://bsky.app/profile/freneegf.bsky.social)
+* [Renee García-Flores](https://reneegf.github.io/), [Bluesky](https://bsky.app/profile/freneegf.bsky.social)
 * [Daianna González Padilla](https://daianna21.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
 
 <!--
