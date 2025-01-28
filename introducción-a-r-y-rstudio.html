@@ -272,8 +272,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li>Material en el que estoy involucrado:
 <ul>
-<li><a href="https://twitter.com/lcolladotor" class="uri">https://twitter.com/lcolladotor</a> (originalmente)</li>
 <li><a href="https://bsky.app/profile/lcolladotor.bsky.social" class="uri">https://bsky.app/profile/lcolladotor.bsky.social</a> (principal medio actualmente)</li>
+<li><a href="https://twitter.com/lcolladotor" class="uri">https://twitter.com/lcolladotor</a> (originalmente)</li>
 <li><a href="https://www.youtube.com/@lcolladotor" class="uri">https://www.youtube.com/@lcolladotor</a></li>
 <li>LIBD rstats club <a href="https://docs.google.com/spreadsheets/d/1is8dZSd0FZ9Qi1Zvq1uRhm-P1McnJRd_zxdAfCRoMfA/edit?usp=sharing" class="uri">https://docs.google.com/spreadsheets/d/1is8dZSd0FZ9Qi1Zvq1uRhm-P1McnJRd_zxdAfCRoMfA/edit?usp=sharing</a></li>
 <li><a href="https://bsky.app/profile/cdsbmexico.bsky.social" class="uri">https://bsky.app/profile/cdsbmexico.bsky.social</a> y <a href="https://bsky.app/profile/libdrstats.bsky.social" class="uri">https://bsky.app/profile/libdrstats.bsky.social</a></li>
@@ -295,7 +295,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025" class="uri">https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025</a>. En especial <a href="https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025/tree/gh-pages" class="uri">https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025/tree/gh-pages</a> se convierte en <a href="http://lcolladotor.github.io/rnaseq_LCG-UNAM_2025/" class="uri">http://lcolladotor.github.io/rnaseq_LCG-UNAM_2025/</a></li>
 <li>Página personal: <a href="https://github.com/lcolladotor/lcolladotor.github.com" class="uri">https://github.com/lcolladotor/lcolladotor.github.com</a> se convierte en <a href="http://lcolladotor.github.io/" class="uri">http://lcolladotor.github.io/</a>. Está todo hecho con <a href="https://github.com/lcolladotor/lcolladotorsource" class="uri">https://github.com/lcolladotor/lcolladotorsource</a></li>
 </ul></li>
-<li>Tip: usen el mismo nombre de usuario en GitHub, Twitter, Gmail, etc.
+<li>Tip: usen el mismo nombre de usuario en GitHub, Bluesky, Gmail, etc.
 <ul>
 <li>How to be a Modern Scientist: <a href="https://lcolladotor.github.io/bioc_team_ds/how-to-be-a-modern-scientist.html" class="uri">https://lcolladotor.github.io/bioc_team_ds/how-to-be-a-modern-scientist.html</a></li>
 </ul></li>
@@ -509,7 +509,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>Para Linux:</li>
 </ul>
-<p>En el servidor de <a href="http://132.248.220.108:8787/">RStudio de la LCG-UNAM</a> no funciona bien <code>gitcreds::gitcreds_set()</code> (porque esa función solo corre bien en macOS o winOS) así que tenemos que editar el archivo <code>.Renviron</code> donde nuestro token no se guarda de forma privada, y por lo cual hoy en día no es lo que recomienda <a href="https://twitter.com/JennyBryan">Jenny Bryan</a>. Pero es lo que funciona en este caso tal como lo hablamos con el autor de <a href="https://github.com/r-lib/gitcreds/issues/29"><code>gitcreds</code> vía GitHub</a>. Usando el siguiente comando podemos abrir el archivo <code>.Renviron</code>.</p>
+<p>En el servidor de <a href="http://132.248.220.108:8787/">RStudio de la LCG-UNAM</a> no funciona bien <code>gitcreds::gitcreds_set()</code> (porque esa función solo corre bien en macOS o winOS) así que tenemos que editar el archivo <code>.Renviron</code> donde nuestro token no se guarda de forma privada, y por lo cual hoy en día no es lo que recomienda <a href="https://bsky.app/profile/jennybryan.bsky.social">Jenny Bryan</a>. Pero es lo que funciona en este caso tal como lo hablamos con el autor de <a href="https://github.com/r-lib/gitcreds/issues/29"><code>gitcreds</code> vía GitHub</a>. Usando el siguiente comando podemos abrir el archivo <code>.Renviron</code>.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="introducción-a-r-y-rstudio.html#cb18-1" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">edit_r_environ</span>()</span></code></pre></div>
 <p>Después guarden su token de GitHub usando la siguiente sintáxis (ojo con la línea en blanco al final, las mayúsculas al inicio, y el que no hay espacios antes y después del <code>=</code>).</p>
 <pre><code>GITHUB_PAT=TU_CLAVE_DE_40_LETRAS</code></pre>
