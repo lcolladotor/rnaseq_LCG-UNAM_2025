@@ -181,7 +181,7 @@ options(repos = c(CRAN = "https://cloud.r-project.org"))
     -   <https://github.com/ComunidadBioInfo/cdsb2020/blob/master/presentaciones_flujos-de-trabajo/Trabajando-con-proyectos.pdf>
 
 ```{r proj, eval = FALSE}
-usethis::create_project("~/rnaseq_2025_notas")
+usethis::create_project("~/Desktop/rnaseq_2025_notas")
 ```
 
 ```{r create_setup, eval = FALSE}
