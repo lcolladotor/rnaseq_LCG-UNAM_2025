@@ -1,35 +1,35 @@
-## ----install, eval = FALSE-----------------------------------------------------------
-## ## For installing Bioconductor packages
-## if (!requireNamespace("BiocManager", quietly = TRUE)) {
-##     install.packages("BiocManager")
-## }
-## 
-## ## Install required packages
-## BiocManager::install(
-##     c(
-##         "usethis", ## Utilities
-##         "here",
-##         "biocthis",
-##         "lobstr",
-##         "postcards",
-##         "sessioninfo",
-##         "SummarizedExperiment", ## Main containers / vis
-##         "iSEE",
-##         "edgeR", ## RNA-seq
-##         "ExploreModelMatrix",
-##         "limma",
-##         "recount3",
-##         "pheatmap", ## Visualization
-##         "ggplot2",
-##         "patchwork",
-##         "RColorBrewer",
-##         "ComplexHeatmap",
-##         "spatialLIBD" ## Advanced
-##     )
-## )
+## ----install, eval = FALSE------------------------------------
+# ## For installing Bioconductor packages
+# if (!requireNamespace("BiocManager", quietly = TRUE)) {
+#     install.packages("BiocManager")
+# }
+# 
+# ## Install required packages
+# BiocManager::install(
+#     c(
+#         "usethis", ## Utilities
+#         "here",
+#         "biocthis",
+#         "lobstr",
+#         "postcards",
+#         "sessioninfo",
+#         "SummarizedExperiment", ## Main containers / vis
+#         "iSEE",
+#         "edgeR", ## RNA-seq
+#         "ExploreModelMatrix",
+#         "limma",
+#         "recount3",
+#         "pheatmap", ## Visualization
+#         "ggplot2",
+#         "patchwork",
+#         "RColorBrewer",
+#         "ComplexHeatmap",
+#         "spatialLIBD" ## Advanced
+#     )
+# )
 
 
-## ----session_packages, eval = TRUE, message = FALSE----------------------------------
+## ----session_packages, eval = TRUE, message = FALSE-----------
 ## Load the package at the top of your script
 library("sessioninfo")
 
@@ -63,7 +63,7 @@ library("RColorBrewer")
 library("spatialLIBD")
 
 
-## ----session_info--------------------------------------------------------------------
+## ----session_info---------------------------------------------
 ## Reproducibility information
 options(width = 120)
 session_info()
