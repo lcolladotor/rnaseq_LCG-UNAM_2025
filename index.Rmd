@@ -30,9 +30,9 @@ Teach assistants:
 Guest presenters:
 
 * [Renee García-Flores](https://reneegf.github.io/), [Bluesky](https://bsky.app/profile/freneegf.bsky.social)
-* [Daianna González Padilla](https://daianna21.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
 
 <!--
+* [Daianna González Padilla](https://daianna21.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
 * [Melissa Mayén Quiroz](https://melii99.github.io/), [Bluesky](https://bsky.app/profile/meli-mq99.bsky.social)
 -->
 
@@ -55,18 +55,17 @@ _Local times in Cuernavaca, Mexico_
 
 * Tuesday January 28:
   - 9-11 am: introduction to R, RStudio, `r BiocStyle::CRANpkg("usethis")` and `r BiocStyle::CRANpkg("here")`
-    - Making your own website with `r BiocStyle::CRANpkg("postcards")` activity led by [Melissa Mayén Quiroz](https://melii99.github.io/)
-  - 12-2 pm: introduction to Bioconductor
+  - 12-2 pm: introduction to GitHub Copilot with RStudio, RStudio projects, and connecting RStudio projects to GitHub
 * Wednesday January 29:
-  - 9-11 am: expression data R/Bioconductor objects and visualization: `r BiocStyle::Biocpkg("SummarizedExperiment")` and `r BiocStyle::Biocpkg("iSEE")`
-  - 12-2 pm: Downloading RNA-seq data using `r BiocStyle::Biocpkg("recount3")`
+  - 9-11 am: introduction to Bioconductor, expression data R/Bioconductor objects and visualization: `r BiocStyle::Biocpkg("SummarizedExperiment")` and `r BiocStyle::Biocpkg("iSEE")`
+  - 12-2 pm: downloading RNA-seq data using `r BiocStyle::Biocpkg("recount3")`
 * Thursday January 30:
   - 9-11 am: statistical models with `r BiocStyle::Biocpkg("ExploreModelMatrix")`
-  - 12-2 pm: [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse) results + code by [Daianna González Padilla](https://daianna21.github.io/). Looking beyond this course!
+  - 12-2 pm: making your own website with `r BiocStyle::CRANpkg("postcards")`
 * Friday January 31:
   - 9-11 am: differential expression analysis with `r BiocStyle::Biocpkg("limma")`
   - 12-2 pm: review + _R/Bioconductor-powered Team Data Science_ overview + open discussion (career paths, networking, etc)
-    - [2025 LIBD summer internship program](https://www.libd.org/summer-internship): application closes ??.
+    - [2025 LIBD summer internship program](https://www.libd.org/summer-internship): application closes ?? (previously early March).
   
 ## External links {-}
 
@@ -77,7 +76,7 @@ _Local times in Cuernavaca, Mexico_
 * [CDSB](https://comunidadbioinfo.github.io/). 
 * [Slack CDSB Mexico](https://comunidadbioinfo.slack.com), in particular the [`intro_rnaseq_lcg_2025` channel](https://comunidadbioinfo.slack.com/archives/C089V30HHP0). You can join this Slack workspace through [this link](https://join.slack.com/t/comunidadbioinfo/shared_invite/zt-8lsvpm84-Fne1W0hadk6cpjgJS17Tnw).
 * [LieberInstitute/template_project](https://github.com/LieberInstitute/template_project)
-* Example real project (by Daianna): [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse)
+* Example real project by [Daianna González Padilla](https://daianna21.github.io/): [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse)
   
 
 ## Course Prerequisites {-}
