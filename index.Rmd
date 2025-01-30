@@ -57,11 +57,11 @@ _Local times in Cuernavaca, Mexico_
   - 9-11 am: introduction to R, RStudio, `r BiocStyle::CRANpkg("usethis")` and `r BiocStyle::CRANpkg("here")`
   - 12-2 pm: introduction to GitHub Copilot with RStudio, RStudio projects, and connecting RStudio projects to GitHub
 * Wednesday January 29:
-  - 9-11 am: introduction to Bioconductor, expression data R/Bioconductor objects and visualization: `r BiocStyle::Biocpkg("SummarizedExperiment")` and `r BiocStyle::Biocpkg("iSEE")`
-  - 12-2 pm: downloading RNA-seq data using `r BiocStyle::Biocpkg("recount3")`
+  - 9-11 am: introduction to Bioconductor
+  - 12-2 pm: expression data R/Bioconductor objects and visualization: `r BiocStyle::Biocpkg("SummarizedExperiment")` and `r BiocStyle::Biocpkg("iSEE")`
 * Thursday January 30:
-  - 9-11 am: statistical models with `r BiocStyle::Biocpkg("ExploreModelMatrix")`
-  - 12-2 pm: making your own website with `r BiocStyle::CRANpkg("postcards")`
+  - 9-11 am: downloading RNA-seq data using `r BiocStyle::Biocpkg("recount3")` and exploring statistical models with `r BiocStyle::Biocpkg("ExploreModelMatrix")`
+  - 12-2 pm: making your own website with `r BiocStyle::CRANpkg("postcards")` by [Renee García-Flores](https://reneegf.github.io/)
 * Friday January 31:
   - 9-11 am: differential expression analysis with `r BiocStyle::Biocpkg("limma")`
   - 12-2 pm: review + _R/Bioconductor-powered Team Data Science_ overview + open discussion (career paths, networking, etc)
