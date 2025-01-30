@@ -103,12 +103,12 @@ foo <- function(hola) {
   - <https://mlverse.github.io/lang/> para traducir la ayuda de paquetes a tu idioma
 
 ```{r lang_demo, eval = FALSE}
-## 1. Installa el paquete de mall
+## 1. Instala el paquete de mall
 install.packages("mall")
 
 ## 2. Instala Ollama desde https://ollama.com/download
 
-## 3. installa ollamar
+## 3. Instala ollamar
 install.packages("ollamar")
 
 ## 4. Descarga un LLM, tipo llama3.2
@@ -122,15 +122,17 @@ pak::pak("mlverse/lang")
 Sys.getenv("LANG")
 ## 6b. Cambia tu lenguaje si quieres
 Sys.setenv(LANGUAGE = "Spanish")
-## 6c. Para hacerlo de forma más permanente edita tu ~/.Renviron con
-## usethis::edit_r_environ()
 
 ## 7. Prueba lang
 library("lang")
 llm_use("ollama", "llama3.2", seed = 100)
 ?lm
 ## 7b. Para hacerlo de forma más permanente edita tu ~/.Rprofile con
-## usethis::edit_r_profile()
+# usethis::edit_r_profile()
+## y luego agrega
+Sys.setenv(LANGUAGE = "Spanish")
+library("lang")
+llm_use("ollama", "llama3.2", seed = 100)
 ```
 
 
