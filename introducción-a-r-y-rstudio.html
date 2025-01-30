@@ -375,12 +375,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="https://mlverse.github.io/lang/" class="uri">https://mlverse.github.io/lang/</a> para traducir la ayuda de paquetes a tu idioma</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="introducción-a-r-y-rstudio.html#cb9-1" tabindex="-1"></a><span class="do">## 1. Installa el paquete de mall</span></span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="introducción-a-r-y-rstudio.html#cb9-1" tabindex="-1"></a><span class="do">## 1. Instala el paquete de mall</span></span>
 <span id="cb9-2"><a href="introducción-a-r-y-rstudio.html#cb9-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;mall&quot;</span>)</span>
 <span id="cb9-3"><a href="introducción-a-r-y-rstudio.html#cb9-3" tabindex="-1"></a></span>
 <span id="cb9-4"><a href="introducción-a-r-y-rstudio.html#cb9-4" tabindex="-1"></a><span class="do">## 2. Instala Ollama desde https://ollama.com/download</span></span>
 <span id="cb9-5"><a href="introducción-a-r-y-rstudio.html#cb9-5" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="introducción-a-r-y-rstudio.html#cb9-6" tabindex="-1"></a><span class="do">## 3. installa ollamar</span></span>
+<span id="cb9-6"><a href="introducción-a-r-y-rstudio.html#cb9-6" tabindex="-1"></a><span class="do">## 3. Instala ollamar</span></span>
 <span id="cb9-7"><a href="introducción-a-r-y-rstudio.html#cb9-7" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ollamar&quot;</span>)</span>
 <span id="cb9-8"><a href="introducción-a-r-y-rstudio.html#cb9-8" tabindex="-1"></a></span>
 <span id="cb9-9"><a href="introducción-a-r-y-rstudio.html#cb9-9" tabindex="-1"></a><span class="do">## 4. Descarga un LLM, tipo llama3.2</span></span>
@@ -394,15 +394,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-17"><a href="introducción-a-r-y-rstudio.html#cb9-17" tabindex="-1"></a><span class="fu">Sys.getenv</span>(<span class="st">&quot;LANG&quot;</span>)</span>
 <span id="cb9-18"><a href="introducción-a-r-y-rstudio.html#cb9-18" tabindex="-1"></a><span class="do">## 6b. Cambia tu lenguaje si quieres</span></span>
 <span id="cb9-19"><a href="introducción-a-r-y-rstudio.html#cb9-19" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">LANGUAGE =</span> <span class="st">&quot;Spanish&quot;</span>)</span>
-<span id="cb9-20"><a href="introducción-a-r-y-rstudio.html#cb9-20" tabindex="-1"></a><span class="do">## 6c. Para hacerlo de forma más permanente edita tu ~/.Renviron con</span></span>
-<span id="cb9-21"><a href="introducción-a-r-y-rstudio.html#cb9-21" tabindex="-1"></a><span class="do">## usethis::edit_r_environ()</span></span>
-<span id="cb9-22"><a href="introducción-a-r-y-rstudio.html#cb9-22" tabindex="-1"></a></span>
-<span id="cb9-23"><a href="introducción-a-r-y-rstudio.html#cb9-23" tabindex="-1"></a><span class="do">## 7. Prueba lang</span></span>
-<span id="cb9-24"><a href="introducción-a-r-y-rstudio.html#cb9-24" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;lang&quot;</span>)</span>
-<span id="cb9-25"><a href="introducción-a-r-y-rstudio.html#cb9-25" tabindex="-1"></a><span class="fu">llm_use</span>(<span class="st">&quot;ollama&quot;</span>, <span class="st">&quot;llama3.2&quot;</span>, <span class="at">seed =</span> <span class="dv">100</span>)</span>
-<span id="cb9-26"><a href="introducción-a-r-y-rstudio.html#cb9-26" tabindex="-1"></a>?lm</span>
-<span id="cb9-27"><a href="introducción-a-r-y-rstudio.html#cb9-27" tabindex="-1"></a><span class="do">## 7b. Para hacerlo de forma más permanente edita tu ~/.Rprofile con</span></span>
-<span id="cb9-28"><a href="introducción-a-r-y-rstudio.html#cb9-28" tabindex="-1"></a><span class="do">## usethis::edit_r_profile()</span></span></code></pre></div>
+<span id="cb9-20"><a href="introducción-a-r-y-rstudio.html#cb9-20" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="introducción-a-r-y-rstudio.html#cb9-21" tabindex="-1"></a><span class="do">## 7. Prueba lang</span></span>
+<span id="cb9-22"><a href="introducción-a-r-y-rstudio.html#cb9-22" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;lang&quot;</span>)</span>
+<span id="cb9-23"><a href="introducción-a-r-y-rstudio.html#cb9-23" tabindex="-1"></a><span class="fu">llm_use</span>(<span class="st">&quot;ollama&quot;</span>, <span class="st">&quot;llama3.2&quot;</span>, <span class="at">seed =</span> <span class="dv">100</span>)</span>
+<span id="cb9-24"><a href="introducción-a-r-y-rstudio.html#cb9-24" tabindex="-1"></a>?lm</span>
+<span id="cb9-25"><a href="introducción-a-r-y-rstudio.html#cb9-25" tabindex="-1"></a><span class="do">## 7b. Para hacerlo de forma más permanente edita tu ~/.Rprofile con</span></span>
+<span id="cb9-26"><a href="introducción-a-r-y-rstudio.html#cb9-26" tabindex="-1"></a><span class="co"># usethis::edit_r_profile()</span></span>
+<span id="cb9-27"><a href="introducción-a-r-y-rstudio.html#cb9-27" tabindex="-1"></a><span class="do">## y luego agrega</span></span>
+<span id="cb9-28"><a href="introducción-a-r-y-rstudio.html#cb9-28" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">LANGUAGE =</span> <span class="st">&quot;Spanish&quot;</span>)</span>
+<span id="cb9-29"><a href="introducción-a-r-y-rstudio.html#cb9-29" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;lang&quot;</span>)</span>
+<span id="cb9-30"><a href="introducción-a-r-y-rstudio.html#cb9-30" tabindex="-1"></a><span class="fu">llm_use</span>(<span class="st">&quot;ollama&quot;</span>, <span class="st">&quot;llama3.2&quot;</span>, <span class="at">seed =</span> <span class="dv">100</span>)</span></code></pre></div>
 </div>
 <div id="rstudio" class="section level2 hasAnchor" number="1.4">
 <h2><span class="header-section-number">1.4</span> RStudio<a href="introducción-a-r-y-rstudio.html#rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
