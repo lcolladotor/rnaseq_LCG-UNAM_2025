@@ -274,6 +274,18 @@ You can find it in bioconductor.org/packages/rel...<br><br><a href="https://bsky
 
 You can find more information in bioconductor.org/packages/rel...<br><br><a href="https://bsky.app/profile/did:plc:s6kfnbej7vnp7rzbvtjmo5yr/post/3lgwlgokr422t?ref_src=embed">[image or embed]</a></p>&mdash; Gabriel Ramírez-Vilchis (<a href="https://bsky.app/profile/did:plc:s6kfnbej7vnp7rzbvtjmo5yr?ref_src=embed">@gabrielramv.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:s6kfnbej7vnp7rzbvtjmo5yr/post/3lgwlgokr422t?ref_src=embed">January 29, 2025 at 10:52 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:mvlqfyvvqf7kcuok7swi4oda/app.bsky.feed.post/3lh5czgm6b22y" data-bluesky-cid="bafyreiftnwhxvhyc2bguf7j7s2ctivxjv6l7iyjl5knizaomrdbweh3xqa"><p lang="es">I explored scDotPlot from @bioconductor.bsky.social, an amazing tool for generating dot plots with scRNA-seq data 📊. It supports hierarchical clustering and works seamlessly with Seurat and SingleCellExperiment objects. 🧬
+
+Details: bit.ly/3EhQO6Z
+
+#scRNAseq #Bioinformatics #DataVisualization<br><br><a href="https://bsky.app/profile/did:plc:mvlqfyvvqf7kcuok7swi4oda/post/3lh5czgm6b22y?ref_src=embed">[image or embed]</a></p>&mdash; Silvana Cristo  (<a href="https://bsky.app/profile/did:plc:mvlqfyvvqf7kcuok7swi4oda?ref_src=embed">@silvanaycristo.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:mvlqfyvvqf7kcuok7swi4oda/post/3lh5czgm6b22y?ref_src=embed">February 1, 2025 at 3:10 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:mvlqfyvvqf7kcuok7swi4oda/app.bsky.feed.post/3lh5d3jwfsk2y" data-bluesky-cid="bafyreifsk5g6myzmag7mm7jkinrm4gh4pgjzeoijtuqwgdjrtzntwpdyeu"><p lang="es">I checked out scoup from @bioconductor.bsky.social, a tool for simulating codon sequences under Darwinian selection 🧬. Great for fitness landscapes &amp; evolutionary studies! 🌍🔬
+
+More info here: bit.ly/3PZtbTj
+
+#Evolution #Bioinformatics #CodonSim #Rstats<br><br><a href="https://bsky.app/profile/did:plc:mvlqfyvvqf7kcuok7swi4oda/post/3lh5d3jwfsk2y?ref_src=embed">[image or embed]</a></p>&mdash; Silvana Cristo  (<a href="https://bsky.app/profile/did:plc:mvlqfyvvqf7kcuok7swi4oda?ref_src=embed">@silvanaycristo.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:mvlqfyvvqf7kcuok7swi4oda/post/3lh5d3jwfsk2y?ref_src=embed">February 1, 2025 at 3:11 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+
 ## De ustedes
 
 ??
