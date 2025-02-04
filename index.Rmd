@@ -122,9 +122,20 @@ You will also need to install [RStudio](https://rstudio.com/products/rstudio/dow
 
 * Participation
   - (main evidence) written and/or verbal participation during class
-  - (optional, strongly encouraged for your own career) Community building: CDSB Slack (introduce yourself), Bluesky, GitHub, etc.
+    - This is tracked by day by the TA. Each day counts as a category.
+  - (optional, strongly encouraged for your own career) Community building: CDSB Slack (introduce yourself), Bluesky, GitHub, etc. These are tracked by the TA: please let the TA know of your participations.
+    - GitHub issues on the course repository
+    - CDSB Slack [#bienvenida](https://comunidadbioinfo.slack.com/archives/CAB6CHXUY) channel
+    - Bioconductor Slack [#introductions](https://community-bioc.slack.com/archives/C36B0HK7W) channel
+    - Bluesky posts related to the course
+  - Grading:
+    - 0%: no participation
+    - 25%: participation in only 1 out of 8 categories (4 days, 4 public participation categories)
+    - 50%: participation in 2 out of 8 categories 
+    - 75%: participation in 3 out of 8 categories 
+    - 100%: participation in 4 or more categories
 * Public work
-  - (main evidence) Taking notes on GitHub
+  - (main evidence) Taking notes on your GitHub class notes repositories
   - (optional) Deploy an iSEE `shiny` app on shinyapps.io
   - (advanced and optional) R package with notes following `usethis::create_package()` + `biocthis::use_bioc_pkg_templates()`.
 * Final project
